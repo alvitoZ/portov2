@@ -9,9 +9,6 @@ import StatusBar from "@/components/organisms/StatusBar";
 const Right = () => {
   return (
     <div className="w-[50vw] flex flex-col gap-2">
-      <div className="flex items-center justify-center">
-        <StatusBar />
-      </div>
       <div className="flex justify-end">
         <Combat />
       </div>

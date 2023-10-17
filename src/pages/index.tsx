@@ -10,6 +10,7 @@ const index = () => {
         title={"kitanv1 ui/ux"}
         description="Description of Create Next Page by aing"
       />
+
       <Left />
       <Right />
     </BlankTemplate>

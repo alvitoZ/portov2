@@ -15,11 +15,12 @@ const Left = () => {
       bgcolor: "bgLimited2",
     },
   ];
+
+  const uploadImage = () => {
+    console.log("s");
+  };
   return (
-    <div className="md:w-[20vw] w-[40vw] flex flex-col gap-8 box-border">
-      <div className="flex justify-end">
-        <Headicon />
-      </div>
+    <div className="md:w-[20vw] w-[40vw] flex flex-col gap-8">
       <div>
         {data.map(({ url, text, bgcolor }, i) => {
           return (
@@ -44,16 +45,19 @@ const Left = () => {
         <div className="w-32 h-32 flex items-center justify-center rounded-full border-4 border-[#F2DC52]">
           <div className="flex flex-col items-center">
             <p className="font-oswald font-semibold text-6xl text-white">24</p>
-            <p className="font-oswald font-normal text-2xl text-[#BBBBBB]">
+            <p className="font-oswald font-normal text-2xl text-[#f1e7e7]">
               LV
             </p>
           </div>
         </div>
         <div className="flex justify-between md:w-40 w-fit items-center">
-          <p className="font-oswald font-semibold text-[calc(2.25rem - 1vw)] leading-9 tracking-wider text-white">
+          <p className="font-oswald font-semibold text-3xl tracking-wider text-white">
             Kita
           </p>
-          <div className="bg-[#343233] rounded-full border-1 border-white">
+          <div
+            className="bg-[#343233] rounded-full border-1 border-white cursor-pointer hover:opacity-60"
+            onClick={() => uploadImage()}
+          >
             <div className="p-1">
               <Image
                 src={"/uploads/rotate.png"}

@@ -8,17 +8,20 @@ export const Headicon = () => {
     },
     {
       url: "/uploads/warning.png",
+      func: "",
     },
     {
       url: "/uploads/mail.png",
+      func: "",
     },
     {
       url: "/uploads/calendar.png",
+      func: "",
     },
   ];
   return (
     <div className="w-fit flex gap-3">
-      {data.map(({ url }, i) => {
+      {data.map(({ url, func }, i) => {
         return (
           <Image
             className="p-1"
