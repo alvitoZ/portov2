@@ -4,7 +4,6 @@ import Operator from "@/components/organisms/Operator";
 import Recruitment from "@/components/organisms/Recruitment";
 import Mission from "@/components/organisms/Mission";
 import Base from "@/components/organisms/Base";
-import StatusBar from "@/components/organisms/StatusBar";
 
 const Right = () => {
   return (

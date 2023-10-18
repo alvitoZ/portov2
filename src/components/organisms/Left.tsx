@@ -1,6 +1,6 @@
-import Headicon from "../molecules/Headicon";
 import { LimitedBox } from "../atoms/LimitedBox";
 import Image from "next/image";
+import ChangeBg from "../molecules/ChangeBg";
 
 const Left = () => {
   const data = [
@@ -16,9 +16,6 @@ const Left = () => {
     },
   ];
 
-  const uploadImage = () => {
-    console.log("s");
-  };
   return (
     <div className="md:w-[20vw] w-[40vw] flex flex-col gap-8">
       <div>
@@ -50,25 +47,7 @@ const Left = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-between md:w-40 w-fit items-center">
-          <p className="font-oswald font-semibold text-3xl tracking-wider text-white">
-            Kita
-          </p>
-          <div
-            className="bg-[#343233] rounded-full border-1 border-white cursor-pointer hover:opacity-60"
-            onClick={() => uploadImage()}
-          >
-            <div className="p-1">
-              <Image
-                src={"/uploads/rotate.png"}
-                width={20}
-                height={20}
-                alt=""
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </div>
+        <ChangeBg />
       </div>
     </div>
   );

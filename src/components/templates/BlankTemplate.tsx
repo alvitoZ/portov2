@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { NextPage } from "next";
-import { useRouter } from "next/router";
 import Top from "@/components/organisms/Top";
 
 type props = {
@@ -8,7 +7,6 @@ type props = {
 };
 
 const BlankTemplate: NextPage<props> = ({ children }) => {
-  const router = useRouter();
   const [responsive, setResponsive] = useState<boolean>(false);
   useEffect(() => {
     if (window.innerHeight > window.innerWidth) {
