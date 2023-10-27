@@ -17,7 +17,7 @@ const Left = () => {
   ];
 
   return (
-    <div className="md:w-[20vw] w-[40vw] flex flex-col gap-8">
+    <div className="w-[20vw] flex flex-col gap-8">
       <div>
         {data.map(({ url, text, bgcolor }, i) => {
           return (
@@ -30,7 +30,7 @@ const Left = () => {
                   height={40}
                   className="object-contain"
                 />
-                <p className="font-oswald font-thin text-[calc(1.5rem - 1vw)] leading-7">
+                <p className="font-oswald font-thin text-[calc(1.5em - 1vw)] leading-7">
                   {text}
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Left = () => {
             </p>
           </div>
         </div>
-        <ChangeBg />
+        {/* <ChangeBg /> */}
       </div>
     </div>
   );
