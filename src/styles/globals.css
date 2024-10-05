@@ -65,10 +65,11 @@ body.dark {
   @apply transition ease-in-out delay-150 bg-violet-600 hover:-translate-y-1 hover:scale-110 hover:bg-violet-700 duration-300;
 }
 
-* {
-  /* font-family: DM Sans; */
+/**
+*{  font-family: DM Sans; 
   border: 1px solid black;
 }
+**/
 
 /* footer animation */
 @keyframes coba2 {
@@ -103,7 +104,7 @@ body.dark {
 }
 
 .screen {
-  background-image: url("/uploads/screen.jpeg");
+  background-image: url("/uploads/illust_114641841_20240709_005007.jpg");
   position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
