@@ -17,7 +17,7 @@ const Left = () => {
   ];
 
   return (
-    <div className="w-[20vw] flex flex-col gap-8">
+    <div className="w-[20vw] flex flex-col gap-8 skew-x-12">
       <div>
         {data.map(({ url, text, bgcolor }, i) => {
           return (
