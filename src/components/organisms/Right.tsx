@@ -7,7 +7,7 @@ import Base from "@/components/organisms/Base";
 
 const Right = () => {
   return (
-    <div className="w-[50vw] flex flex-col gap-2">
+    <div className="w-[50vw] flex flex-col gap-2 skew-y-12">
       <div className="flex justify-end">
         <Combat />
       </div>
